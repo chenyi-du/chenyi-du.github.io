@@ -133,7 +133,7 @@ export default function Profile({ author, social, features, researchInterests }:
             </div>
 
             {/* Contact Links */}
-            <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-6 relative px-2">
+            <div className="flex flex-nowrap justify-center items-center gap-1 sm:gap-2 mb-6 relative px-0">
                 {socialLinks.map((link) => {
                     const IconComponent = link.icon;
                     if (link.isLocation) {
@@ -297,24 +297,23 @@ export default function Profile({ author, social, features, researchInterests }:
                         </a>
                     );
                 })}
-            </div>
-
-            {/* Social accounts below contact details. Twitter remains unlinked until verified. */}
-            <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 mb-6 text-sm">
                 {social.linkedin && (
                     <a href={social.linkedin} target="_blank" rel="noopener noreferrer"
-                       className="inline-flex items-center gap-1.5 text-neutral-600 dark:text-neutral-400 hover:text-accent">
-                        <Linkedin className="h-4 w-4" aria-hidden="true" />LinkedIn
+                       title="LinkedIn" aria-label="LinkedIn"
+                       className="p-2 text-neutral-600 dark:text-neutral-400 hover:text-accent transition-colors">
+                        <Linkedin className="h-5 w-5" aria-hidden="true" />
                     </a>
                 )}
                 {social.twitter ? (
                     <a href={social.twitter} target="_blank" rel="noopener noreferrer"
-                       className="inline-flex items-center gap-1.5 text-neutral-600 dark:text-neutral-400 hover:text-accent">
-                        <Twitter className="h-4 w-4" aria-hidden="true" />X / Twitter
+                       title="X / Twitter" aria-label="X / Twitter"
+                       className="p-2 text-neutral-600 dark:text-neutral-400 hover:text-accent transition-colors">
+                        <Twitter className="h-5 w-5" aria-hidden="true" />
                     </a>
                 ) : (
-                    <span title="Profile link not yet confirmed" className="inline-flex items-center gap-1.5 text-neutral-400">
-                        <Twitter className="h-4 w-4" aria-hidden="true" />X / Twitter
+                    <span title="Twitter profile not provided yet" aria-label="Twitter profile not provided yet"
+                          className="p-2 text-neutral-400 cursor-default">
+                        <Twitter className="h-5 w-5" aria-hidden="true" />
                     </span>
                 )}
             </div>
