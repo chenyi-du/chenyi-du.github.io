@@ -100,7 +100,35 @@ function getDefaultConfig(): SiteConfig {
     throw new Error('Failed to load content/config.toml');
   }
 
-  return parsed as SiteConfig;
+  const base = parsed as SiteConfig;
+  const profilePath = path.join(process.cwd(), DEFAULT_CONTENT_DIR, 'data', 'profile.json');
+  try {
+    const profile = JSON.parse(fs.readFileSync(profilePath, 'utf-8')) as {
+      name?: string; title?: string; institution?: string; avatar?: string;
+      email?: string; location?: string; github?: string; linkedin?: string; twitter?: string;
+    };
+    return {
+      ...base,
+      author: {
+        ...base.author,
+        ...(profile.name !== undefined ? {name: profile.name} : {}),
+        ...(profile.title !== undefined ? {title: profile.title} : {}),
+        ...(profile.institution !== undefined ? {institution: profile.institution} : {}),
+        ...(profile.avatar !== undefined ? {avatar: profile.avatar} : {}),
+      },
+      social: {
+        ...base.social,
+        ...(profile.email !== undefined ? {email: profile.email} : {}),
+        ...(profile.location !== undefined ? {location: profile.location} : {}),
+        ...(profile.github !== undefined ? {github: profile.github} : {}),
+        ...(profile.linkedin !== undefined ? {linkedin: profile.linkedin} : {}),
+        ...(profile.twitter !== undefined ? {twitter: profile.twitter} : {}),
+      },
+    };
+  } catch (error) {
+    console.warn('Profile JSON could not be loaded; using base configuration:', error);
+    return base;
+  }
 }
 
 export function getConfig(locale?: string): SiteConfig {

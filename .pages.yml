@@ -1,0 +1,155 @@
+media:
+  input: public/media
+  output: /media
+  rename: safe
+
+content:
+  - name: profile
+    label: Profile & Contact
+    type: file
+    path: content/data/profile.json
+    format: json
+    fields:
+      - name: name
+        label: Your name
+        type: string
+        required: true
+      - name: title
+        label: Position
+        type: string
+      - name: institution
+        label: Institution
+        type: string
+      - name: avatar
+        label: Portrait photo
+        type: image
+      - name: email
+        label: Public email
+        type: string
+      - name: location
+        label: Location
+        type: string
+      - name: github
+        label: GitHub URL
+        type: string
+      - name: linkedin
+        label: LinkedIn URL
+        type: string
+      - name: twitter
+        label: X / Twitter URL
+        type: string
+
+  - name: about
+    label: Home - About Me
+    type: file
+    path: content/bio.md
+
+  - name: research
+    label: Research Projects
+    type: file
+    path: content/data/research.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Project title
+        type: string
+        required: true
+      - name: years
+        label: Approximate years
+        type: string
+      - name: tags
+        label: Tags
+        type: select
+        options:
+          multiple: true
+          values:
+            - Disaster resilience
+            - Urban networks
+            - Computational social science
+            - Environmental health
+            - Air pollution & health
+            - Sustainability
+            - Development economics
+            - Individual behaviour
+            - Health
+            - Climate transition
+      - name: description
+        label: What did you do?
+        type: text
+      - name: outputs
+        label: Outputs (optional links)
+        type: object
+        list:
+          collapsible: true
+        fields:
+          - name: label
+            label: Link label
+            type: string
+          - name: url
+            label: URL
+            type: string
+
+  - name: education
+    label: Education
+    type: file
+    path: content/data/education.json
+    format: json
+    list: true
+    fields:
+      - name: period
+        label: Dates
+        type: string
+      - name: institution
+        label: University
+        type: string
+      - name: location
+        label: Location
+        type: string
+      - name: degree
+        label: Degree
+        type: string
+      - name: project
+        label: Research project
+        type: text
+      - name: supervisors
+        label: Supervisors
+        type: string
+
+  - name: teaching
+    label: Teaching
+    type: file
+    path: content/data/teaching.json
+    format: json
+    list: true
+    fields:
+      - name: course
+        label: Course
+        type: string
+      - name: institution
+        label: University
+        type: string
+      - name: role
+        label: Position
+        type: string
+      - name: term
+        label: Term and year
+        type: string
+      - name: with
+        label: With
+        type: string
+
+  - name: publications
+    label: Publications
+    type: file
+    path: content/coming-soon.md
+
+  - name: cv
+    label: Curriculum Vitae
+    type: file
+    path: content/cv.md
+
+  - name: ideas
+    label: Sharing Ideas
+    type: file
+    path: content/ideas.md

@@ -1,0 +1,141 @@
+[
+  {
+    "title": "City Linkages and Supply System Resilience Under Climate Disasters",
+    "years": "2023–present",
+    "tags": [
+      "Disaster resilience",
+      "Urban networks",
+      "Computational social science"
+    ],
+    "description": "Examined how intercity aid and supply networks shape disaster recovery and supply-system resilience. Constructed global city-level datasets on aid, networks and recovery, combining large language models, network analysis, causal inference, machine learning and satellite observations."
+  },
+  {
+    "title": "Global Food Pesticide Residue Meta-analysis",
+    "years": "2023",
+    "tags": [
+      "Environmental health",
+      "Sustainability"
+    ],
+    "description": "Synthesised pesticide-residue research, standardised contamination measures across crops and regions, and assembled a structured dataset for comparative quantitative analysis."
+  },
+  {
+    "title": "Decoding China’s Industrial Policies with Large Language Models",
+    "years": "2022–2023",
+    "tags": [
+      "Development economics",
+      "Computational social science"
+    ],
+    "description": "Processed and analysed approximately three million industrial policy documents to examine policy instruments and outcomes. Developed large language model extraction workflows and integrated firm-level information."
+  },
+  {
+    "title": "Understanding Physicians’ Dynamic Responses to Malpractice Lawsuits",
+    "years": "2021–2022",
+    "tags": [
+      "Individual behaviour",
+      "Health"
+    ],
+    "description": "Analysed linked health-insurance claims to investigate how physicians alter their behaviour after malpractice lawsuits. Developed longitudinal indicators and econometric panel analyses."
+  },
+  {
+    "title": "Rural–Urban Migration and Market Integration",
+    "years": "2021",
+    "tags": [
+      "Development economics",
+      "Urban networks"
+    ],
+    "description": "Studied how migration barriers affect trade, investment and rural–urban market integration using migration microdata and spatial equilibrium modelling."
+  },
+  {
+    "title": "Micro-level Mechanisms and Protective Effects of Individual Defensive Behaviours in Response to Environmental Pollution",
+    "years": "2019–2021",
+    "tags": [
+      "Individual behaviour",
+      "Air pollution & health"
+    ],
+    "description": "Investigated differences in household protective responses to environmental risks and their determinants, with particular attention to air pollution, individual health and the unequal ability to adapt.",
+    "outputs": [
+      {
+        "label": "Published paper",
+        "url": "https://doi.org/10.1016/j.envint.2024.108858"
+      }
+    ]
+  },
+  {
+    "title": "Enterprise Green Development Model: Insights from Typical Enterprises",
+    "years": "2019–2020",
+    "tags": [
+      "Climate transition",
+      "Sustainability"
+    ],
+    "description": "Compared mitigation practices and technologies across businesses, assessing their implications for energy use, emissions and corporate sustainability."
+  },
+  {
+    "title": "China’s Technology Lists for Addressing Climate Change",
+    "years": "2019–2020",
+    "tags": [
+      "Climate transition",
+      "Sustainability"
+    ],
+    "description": "Assessed the mitigation potential, technology maturity and deployment of climate-related technologies in industrial, urban and building sectors and contributed to technical sector reports."
+  },
+  {
+    "title": "Agricultural Adaptation to Climate Change: An Empirical Study in North China",
+    "years": "2018–2020",
+    "tags": [
+      "Individual behaviour",
+      "Climate transition"
+    ],
+    "description": "Examined variation in farmers’ climate-adaptation choices and drivers, analysing the adoption of multiple farm-level behavioural practices."
+  },
+  {
+    "title": "Energy Rebound Effect of Electric Vehicles in Beijing",
+    "years": "2018–2019",
+    "tags": [
+      "Climate transition",
+      "Individual behaviour"
+    ],
+    "description": "Used household travel behaviour data to assess whether electric-vehicle adoption changes driving patterns and creates an energy rebound effect.",
+    "outputs": [
+      {
+        "label": "Published paper",
+        "url": "https://doi.org/10.1016/j.spc.2023.02.005"
+      }
+    ]
+  },
+  {
+    "title": "Vulnerability Analysis of Countries to Climate Change",
+    "years": "2018",
+    "tags": [
+      "Disaster resilience",
+      "Sustainability"
+    ],
+    "description": "Conducted a comparative assessment of countries’ vulnerability to climate change."
+  },
+  {
+    "title": "Determinants of Market Valuation in Publicly Listed Oil and Gas Firms: Evidence from the United States",
+    "years": "2018",
+    "tags": [
+      "Development economics",
+      "Climate transition"
+    ],
+    "description": "Investigated the determinants of valuation among publicly listed oil and gas firms in the United States."
+  },
+  {
+    "title": "Implementation of Coal-Free Zone Policies and Household Energy Transition in Northern China",
+    "years": "2017–2018",
+    "tags": [
+      "Climate transition",
+      "Individual behaviour"
+    ],
+    "description": "Explored coal-replacement policies and household energy transitions in northern China."
+  },
+  {
+    "title": "Evaluating the Timing for Phasing Out Residential Electric Vehicle Subsidies",
+    "years": "2016–2017",
+    "tags": [
+      "Climate transition",
+      "Development economics"
+    ],
+    "description": "Examined the timing of residential electric-vehicle subsidy phase-outs as an energy and transport policy question."
+  }
+]

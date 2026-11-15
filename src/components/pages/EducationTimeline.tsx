@@ -1,29 +1,8 @@
 'use client';
 
-const schools = [
-  {
-    period: '2023.11 – Present',
-    institution: 'Australian National University',
-    location: 'Canberra, Australia',
-    degree: 'PhD, Fenner School of Environment & Society',
-    project: 'City Linkages and Supply System Resilience Under Climate Disasters',
-    supervisors: 'Prof. Xuemei Bai, A/Prof. Steven Lade, and Dr. Tim Baynes',
-  },
-  {
-    period: '2019.09 – 2021.07',
-    institution: 'Beijing Institute of Technology',
-    location: 'Beijing, China',
-    degree: 'MPhil, Climate Economics and Sustainable Development',
-    project: 'Micro-level Mechanisms and Protective Effects of Individual Defensive Behaviours in Response to Environmental Pollution',
-  },
-  {
-    period: '2015.09 – 2019.06',
-    institution: 'China University of Petroleum (Beijing)',
-    location: 'Beijing, China',
-    degree: 'BSc, Energy Economics',
-    project: 'The Energy Rebound Effect of New Energy Vehicles: Evidence from Beijing Residents',
-  },
-];
+import educationData from '../../../content/data/education.json';
+
+const schools = educationData;
 
 export default function EducationTimeline() {
   return (
