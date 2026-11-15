@@ -11,7 +11,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { MapPinIcon as MapPinSolidIcon, EnvelopeIcon as EnvelopeSolidIcon } from '@heroicons/react/24/solid';
 import { HeartIcon as HeartSolidIcon } from '@heroicons/react/24/solid';
-import { Github, Linkedin, Pin } from 'lucide-react';
+import { Github, Linkedin, Twitter, Pin } from 'lucide-react';
 import type { SiteConfig } from '@/lib/config';
 import { useMessages } from '@/lib/i18n/useMessages';
 
@@ -97,11 +97,7 @@ export default function Profile({ author, social, features, researchInterests }:
             href: social.github,
             icon: Github,
         }] : []),
-        ...(social.linkedin ? [{
-            name: 'LinkedIn',
-            href: social.linkedin,
-            icon: Linkedin,
-        }] : []),
+
     ];
 
     return (
@@ -109,26 +105,26 @@ export default function Profile({ author, social, features, researchInterests }:
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="sticky top-8"
+            className="lg:sticky lg:top-24"
         >
             {/* Profile Image */}
-            <div className="w-64 h-64 mx-auto mb-6 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
+            <div className="w-36 h-36 sm:w-40 sm:h-40 mx-auto mb-5 rounded-xl overflow-hidden shadow-sm">
                 <Image
                     src={author.avatar}
                     alt={author.name}
-                    width={256}
-                    height={256}
-                    className="w-full h-full object-cover object-[32%_center]"
+                    width={160}
+                    height={160}
+                    className="w-full h-full object-cover object-center"
                     priority
                 />
             </div>
 
             {/* Name and Title */}
             <div className="text-center mb-6">
-                <h1 className="text-3xl font-serif font-bold text-primary mb-2">
+                <h1 className="text-2xl font-serif font-bold text-primary mb-2">
                     {author.name}
                 </h1>
-                <p className="text-lg text-accent font-medium mb-1">
+                <p className="text-base text-accent font-medium mb-1">
                     {author.title}
                 </p>
                 <p className="text-neutral-600 mb-2">
@@ -301,6 +297,26 @@ export default function Profile({ author, social, features, researchInterests }:
                         </a>
                     );
                 })}
+            </div>
+
+            {/* Social accounts below contact details. Twitter remains unlinked until verified. */}
+            <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 mb-6 text-sm">
+                {social.linkedin && (
+                    <a href={social.linkedin} target="_blank" rel="noopener noreferrer"
+                       className="inline-flex items-center gap-1.5 text-neutral-600 dark:text-neutral-400 hover:text-accent">
+                        <Linkedin className="h-4 w-4" aria-hidden="true" />LinkedIn
+                    </a>
+                )}
+                {social.twitter ? (
+                    <a href={social.twitter} target="_blank" rel="noopener noreferrer"
+                       className="inline-flex items-center gap-1.5 text-neutral-600 dark:text-neutral-400 hover:text-accent">
+                        <Twitter className="h-4 w-4" aria-hidden="true" />X / Twitter
+                    </a>
+                ) : (
+                    <span title="Profile link not yet confirmed" className="inline-flex items-center gap-1.5 text-neutral-400">
+                        <Twitter className="h-4 w-4" aria-hidden="true" />X / Twitter
+                    </span>
+                )}
             </div>
 
             {/* Research Interests */}

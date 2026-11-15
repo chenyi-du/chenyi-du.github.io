@@ -1,7 +1,9 @@
-# Sharing Ideas
+## Currently reading
 
-This space is for essays, research reflections, reading notes and conversations about climate, cities, AI and society.
+I will share the books I am currently reading here soon.
 
-I will add individual articles here over time. In the meantime, explore my [research](/research/) or [publications](/publications/).
+## Articles of interest
 
-*No articles have been published here yet.*
+I am interested in articles that connect **AI for climate**, **computational social science**, **urban cooperation**, **social simulation**, and **climate and health**.
+
+Reading notes and links to specific articles will appear here as I add them. I prefer to share a few useful reflections rather than a long, undifferentiated reading list.

@@ -2,17 +2,16 @@ type = "about"
 title = "About"
 
 [profile]
-research_interests = ["Climate Change", "Urban Resilience", "AI for Climate", "Environmental Behaviour"]
+research_interests = ["Climate Resilience", "Environmental Behaviour", "AI for Climate", "Computational Social Science"]
 
 [[sections]]
 id = "about"
 type = "markdown"
 source = "bio.md"
-title = "About"
+title = "About Me"
 
 [[sections]]
 id = "featured_publications"
-type = "publications"
+type = "markdown"
+source = "coming-soon.md"
 title = "Selected Publications"
-filter = "selected"
-limit = 4

@@ -20,7 +20,8 @@ location_details = []
 google_scholar = ""
 orcid = ""
 github = "https://github.com/chenyi-du"
-linkedin = ""
+linkedin = "https://au.linkedin.com/in/chenyi-du"
+twitter = ""
 
 [features]
 # Show a like button on the about page

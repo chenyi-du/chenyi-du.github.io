@@ -2,6 +2,7 @@
 
 import PublicationsList from '@/components/publications/PublicationsList';
 import TextPage from '@/components/pages/TextPage';
+import ResearchProjects from '@/components/pages/ResearchProjects';
 import CardPage from '@/components/pages/CardPage';
 import { Publication } from '@/types/publication';
 import {
@@ -36,7 +37,9 @@ export default function DynamicPageClient({ dataByLocale, defaultLocale }: Dynam
         <PublicationsList config={pageData.config} publications={pageData.publications} />
       )}
       {pageData.type === 'text' && (
-        <TextPage config={pageData.config} content={pageData.content} />
+        pageData.config.title === 'Research'
+          ? <ResearchProjects />
+          : <TextPage config={pageData.config} content={pageData.content} />
       )}
       {pageData.type === 'card' && (
         <CardPage config={pageData.config} />

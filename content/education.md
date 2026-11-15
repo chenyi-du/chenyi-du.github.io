@@ -1,23 +1,29 @@
-# Education
+**2023.11 – Present**
 
-### Australian National University, Australia
-**PhD, Fenner School of Environment & Society** | 2023–present
+### Australian National University, Canberra, Australia
 
-Research: City Linkages and Supply System Resilience Under Climate Disasters.
+**PhD**, Fenner School of Environment & Society
 
-Supervisors: Prof. Xuemei Bai, A/Prof. Steven Lade and Dr. Tim Baynes.
+Research project: City Linkages and Supply System Resilience Under Climate Disasters.
 
-### Beijing Institute of Technology, China
-**MPhil, Climate Economics and Sustainable Development** | 2019–2021
+Supervisors: Prof. Xuemei Bai, A/Prof. Steven Lade, and Dr. Tim Baynes.
 
-Thesis: Individual defensive behaviours and environmental pollution.
+---
 
-### China University of Petroleum (Beijing), China
-**BSc, Energy Economics** | 2015–2019
+**2019.09 – 2021.07**
 
-Thesis: Energy rebound effects of electric vehicles in Beijing.
+### Beijing Institute of Technology, Beijing, China
 
-## Additional study
+**MPhil**, Climate Economics and Sustainable Development
 
-- **The Chinese University of Hong Kong** — short courses in development economics, data analytics and quantitative policy evaluation (2021).
-- **Chinese Academy of Sciences** — summer session in energy and climate change economics (2017).
+Research project: Micro-level Mechanisms and Protective Effects of Individual Defensive Behaviours in Response to Environmental Pollution.
+
+---
+
+**2015.09 – 2019.06**
+
+### China University of Petroleum (Beijing), Beijing, China
+
+**BSc**, Energy Economics
+
+Research project: The Energy Rebound Effect of New Energy Vehicles: Evidence from Beijing Residents.
