@@ -1,0 +1,27 @@
+type = "card"
+title = "Teaching"
+description = "Teaching and tutorial support at The Chinese University of Hong Kong, Shenzhen."
+
+[[items]]
+title = "Development Economics"
+subtitle = "Teaching assistance"
+date = "Spring 2023"
+content = "Teaching support at CUHK-Shenzhen."
+
+[[items]]
+title = "Environmental Economics and Policy"
+subtitle = "Teaching assistance"
+date = "Summer 2022"
+content = "Teaching support at CUHK-Shenzhen."
+
+[[items]]
+title = "Principles of Economics"
+subtitle = "Teaching assistance"
+date = "Spring 2022 and 2023"
+content = "Teaching support at CUHK-Shenzhen."
+
+[[items]]
+title = "Basic Microeconomics"
+subtitle = "Teaching assistance"
+date = "Autumn 2021 and 2022"
+content = "Teaching support at CUHK-Shenzhen."

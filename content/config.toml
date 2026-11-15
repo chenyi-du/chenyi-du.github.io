@@ -1,0 +1,89 @@
+[site]
+title = "Chenyi Du"
+description = "Researcher in climate change, urban resilience, and environmental behaviour."
+favicon = "/favicon.svg"
+last_updated = "November 2026"
+
+[author]
+name = "Chenyi Du"
+title = "PhD Student"
+institution = "Australian National University"
+avatar = "/bio.jpg"
+
+[social]
+# Contact information (leave blank or delete to hide)
+
+email = "chenyi.du@anu.edu.au"
+location = "Canberra, Australia"
+location_url = "https://maps.google.com"
+location_details = []
+google_scholar = ""
+orcid = ""
+github = "https://github.com/chenyi-du"
+linkedin = ""
+
+[features]
+# Show a like button on the about page
+enable_likes = false
+
+# Display all subpages on a single page
+enable_one_page_mode = false
+
+[i18n]
+enabled = false
+locales = ["zh", "en"]
+default_locale = "en"
+# "auto" means the locale will be determined by the browser's language setting, "fixed" means the locale will be fixed to the default locale (but can be switched still, if you want to disable, set "enable=false")
+mode = "auto"
+fixed_locale = "en"
+# If true, PRISM will remember user's language preference in browser's localStorage
+persist = true
+# Show a language switcher on the top right corner
+switcher = true
+
+[i18n.labels]
+zh = "中文"
+en = "English"
+
+
+[[navigation]]
+title = "Home"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Education"
+type = "page"
+target = "education"
+href = "/education"
+
+[[navigation]]
+title = "Research"
+type = "page"
+target = "research"
+href = "/research"
+
+[[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "Teaching"
+type = "page"
+target = "teaching"
+href = "/teaching"
+
+[[navigation]]
+title = "Sharing Ideas"
+type = "page"
+target = "ideas"
+href = "/ideas"
+
+[[navigation]]
+title = "CV"
+type = "page"
+target = "cv"
+href = "/cv"
