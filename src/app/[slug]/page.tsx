@@ -32,7 +32,7 @@ function loadDynamicPageData(slug: string, locale?: string): DynamicPageLocaleDa
 
   if (pageConfig.type === 'text') {
     const textConfig = pageConfig as TextPageConfig;
-    const content = getMarkdownContent(textConfig.source, locale);
+    const content = ['research', 'education', 'teaching'].includes(slug) ? '' : getMarkdownContent(textConfig.source, locale);
     return {
       type: 'text',
       config: textConfig,
