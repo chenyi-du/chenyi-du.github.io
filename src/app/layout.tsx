@@ -7,6 +7,8 @@ import { LocaleProvider } from '@/components/ui/LocaleProvider';
 import { getConfig } from '@/lib/config';
 import { getRuntimeI18nConfig } from '@/lib/i18n/config';
 import type { SiteConfig } from '@/lib/config';
+import Script from 'next/script';
+import { getAnalyticsConfig } from '@/lib/analytics';
 
 export async function generateMetadata(): Promise<Metadata> {
   const config = getConfig();
@@ -119,6 +121,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const config = getConfig();
+  const analytics = getAnalyticsConfig();
   const runtimeI18n = getRuntimeI18nConfig(config.i18n);
   const targetLocales = runtimeI18n.enabled ? runtimeI18n.locales : [runtimeI18n.defaultLocale];
 
@@ -159,6 +162,17 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased">
+        {analytics && (
+          <Script
+            id="umami-analytics"
+            src="https://cloud.umami.is/script.js"
+            strategy="afterInteractive"
+            data-website-id={analytics.websiteId}
+            data-domains={analytics.domain}
+            data-exclude-search="true"
+            data-do-not-track="true"
+          />
+        )}
         <ThemeProvider>
           <LocaleProvider config={runtimeI18n}>
             <Navigation

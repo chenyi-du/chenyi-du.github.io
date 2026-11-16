@@ -4,6 +4,26 @@ media:
   rename: safe
 
 content:
+
+  - name: analytics
+    label: Website Analytics (Umami)
+    type: file
+    path: content/data/analytics.json
+    format: json
+    fields:
+      - name: provider
+        label: Analytics service (leave unchanged)
+        type: string
+        required: true
+      - name: websiteId
+        label: Umami Website ID (from Tracking code)
+        type: string
+        description: Copy the Website ID after adding your website on Umami Cloud. Until this is filled, tracking is off.
+      - name: domain
+        label: Website hostname (leave unchanged)
+        type: string
+        required: true
+
   - name: profile
     label: Profile & Contact
     type: file
