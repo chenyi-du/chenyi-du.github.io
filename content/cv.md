@@ -4,14 +4,10 @@
 - **MPhil**, Climate Economics and Sustainable Development, Beijing Institute of Technology, 2019–2021.
 - **BSc**, Energy Economics, China University of Petroleum (Beijing), 2015–2019.
 
-## Research interests
-
-Climate change, urban resilience, intercity cooperation, AI for climate, environmental adaptation and quantitative policy evaluation.
-
-## Professional experience
+## Working Experience
 
 **2021.07 – 2023.09 · The Chinese University of Hong Kong, Shenzhen and Hong Kong**  
-*Research Associate*  
+*Full-time Research Associate*  
 Supported empirical research in economics and policy analysis, and assisted with tutorials and teaching in economics courses.
 
 **2018.10 – 2019.02 · Sinopec (China Petrochemical Corporation), Beijing**  

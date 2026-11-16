@@ -14,3 +14,14 @@ Visitor tracking is prepared using privacy-friendly **Umami Cloud**. It is delib
 6. Wait for GitHub Actions to deploy. Visit your website; Umami's dashboard will show daily visitors, page views, popular pages, referring sites and approximate visitor countries/regions.
 
 **Important:** No historical visits can be reconstructed from before tracking activation. You may see fewer visits than your true total due to ad blocking, Do Not Track, and browser restrictions. Visit counts depend on your selected reporting timezone. Location is approximate and should not be treated as exact.
+
+ 
+## How to edit this website
+
+**Visual editor:** https://app.pagescms.org/ — sign in with GitHub, choose repository **chenyi-du/chenyi-du.github.io** on the **main** branch. The editor sections are About Me, Education, Research Projects, Teaching, Curriculum Vitae and Profile & Contact.
+
+Press **Save** when you finish editing. The website is published automatically by [GitHub Actions](https://github.com/chenyi-du/chenyi-du.github.io/actions).
+
+If the editor does not list this repository, confirm the Pages CMS GitHub App has access. You can also edit content directly from the [content folder on GitHub](https://github.com/chenyi-du/chenyi-du.github.io/tree/main/content). Note that Research, Education and Teaching are maintained as JSON in content/data.
+
+The underlying website was adapted from [PRISM](https://github.com/xyjoey/PRISM) under the MIT license; the original license is retained.
